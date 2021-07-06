@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格的合并</title>
+</head>
+<body>
+    <!-- 
+            对其方式：
+            水平align：left/center/right
+            垂直valign：top/middle/bottom
+         -->
+    <table border="1" width="600" height="300" align="center">
+        <tr align="center"> 
+            <td>111</td>
+            <td>222</td>
+            <td>333</td>
+            <td>444</td>
+            <td>555</td>
+            <td>666</td>
+        </tr>
+        <tr valign="top">
+            <td>aaa</td>
+            <td>sss</td>
+            <td>ddd</td>
+            <td>fff</td>
+            <td>ggg</td>
+            <td>hhh</td>
+        </tr>
+        <!-- 
+            表格的合并
+            行合并：rowspan
+            列合并：colspan
+        -->
+        <tr>
+            <td rowspan="2">行合并</td>
+            <td>w2w</td>
+            <td>e3e</td>
+            <td>4r4</td>
+            <td>5t5</td>
+            <td>y6y</td>
+        </tr>
+        <tr>
+            <td>!!!</td>
+            <td>@@@</td>
+            <td>###</td>
+            <td>$$$</td>
+            <td>%%%</td>
+            <!-- 行合并，所以少一行 -->
+        </tr>
+        <tr>
+            <td colspan="2">列合并</td>
+            <td>333</td>
+            <td>444</td>
+            <td>555</td>
+            <td>666</td>
+            <!-- 列合并所以少一列 -->
+        </tr>
+    </table>
+</body>
+</html>

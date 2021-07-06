@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <!-- 快捷方式：table>tr*5>td*3 -->
+    <!-- 
+        表格的属性：1、表格的边框：border
+        2、cellpadding="20" 表格内容到边框的距离
+        3、表格边框的宽度cellspacing="5"
+        4、css属性：style="border-collapse: collapse;"  设置表格为单一边框。设置这个属性后，cellspacing属性失效。
+     -->
+   <table border="1px" cellpadding="20" cellspacing="5" style="border-collapse: collapse;" width="400"> 
+       <caption>caotion标签用来定义表格得标题</caption>
+       <!-- 头部 -->
+       <thead>
+       <tr>
+           <!-- th  标题 加粗 -->
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+    </thead>
+    <!-- 身体 -->
+    <tbody>
+        <!-- 
+            对其方式：
+            水平align：left/center/right
+            垂直valign：top/middle/bottom
+         -->
+        <tr>
+            <td>张三</td>
+            <td>11</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>14</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+            <td>19</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>吹画</td>
+            <td>14</td>
+            <td>女</td>
+        </tr>
+    </tbody>
+    <!-- 尾部 -->
+    <tfoot>
+        <tr>
+            <td>优秀</td>
+            <td>nice</td>
+            <td>666</td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

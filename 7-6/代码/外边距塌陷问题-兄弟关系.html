@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0 ;
+            margin: 0 ;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(30, 144, 255);
+            margin-bottom: 30px;
+
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(120, 255, 30);
+            margin-top:50px;
+        }
+        .fuji{
+            overflow: hidden;
+        }
+        /* 
+        外边距塌陷问题2：给上面的div加30px的向下的外边距，下面的div加50px的向上的外边距，结果两个div间距为50px，取最大值。
+        怎么可可以让他变成80px？
+        解决：给其中的一个盒模型套一个父级标签加overflow：hidden；
+         */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="fuji">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

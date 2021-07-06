@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: dodgerblue;
+            /* 固定宽度 */
+        }
+        /* 动态宽度 */
+        .box1{
+            max-width: 800px;
+            height: 200px;
+            background-color: firebrick;
+        }
+        .box2{
+            min-width: 800px;
+            height: 200px;
+            background-color: rgb(50, 241, 25);
+        }
+        /* 动态高度 */
+        .box3{
+            width: 800px;
+            max-height: 200px;
+            background-color: rgb(139, 28, 243);
+        }
+        .box3in{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(240, 14, 14);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 动态宽 -->
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <hr>
+    <!-- 动态高 -->
+    <div class="box3">
+        <div class="box3in">
+
+        </div>
+    </div>
+</body>
+</html>

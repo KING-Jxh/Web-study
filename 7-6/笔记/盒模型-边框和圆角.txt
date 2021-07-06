@@ -1,0 +1,40 @@
+7、使用border为盒子添加边框（一）
+盒子模型的边框就是围绕着内容及补白的线，这条线你可以设置它的粗细、样式和颜色(边框三个属性)。
+如下面代码为 div 来设置边框粗细为 2px、样式为实心的、颜色为红色的边框：
+div{ border:2px  solid  red;}
+上面是 border 代码的缩写形式，可以分开写：
+div{ border-width:2px;
+    border-style:solid;
+    border-color:red;}
+注意：
+1、border-style（边框样式）常见样式有：
+dashed（虚线）| dotted（点线）| solid（实线）。
+2、border-color（边框颜色）中的颜色可设置为十六进制颜色，如:
+border-color:#888;//前面的井号不要忘掉。
+3、border-width（边框宽度）中的宽度也可以设置为：
+thin | medium | thick（但不是很常用），最常还是用像素（px）。
+
+div{border-bottom:1px solid red;}
+
+ 8、使用border-radius设置圆角
+  div{border-radius: 20px 10px 15px 30px;}
+  
+需要特别注意的：一个正方形，当设置圆角效果值为元素宽度一半时，显示效果为圆形。例如：
+ div {
+        width: 200px;
+        height: 200px;
+        border: 5px solid red;
+        border-radius: 100px;
+    }
+效果：就是个圆
+
+也可以写为百分比50%
+ div {
+        width: 200px;
+        height: 200px;
+        border: 5px solid red;
+        border-radius: 100px;
+    }
+
+
+9、使用padding为盒子设置内边距   使用margin为盒子设置外边距
