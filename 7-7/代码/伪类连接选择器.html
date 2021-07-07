@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 未访问过 */
+        a:link{
+            color: lawngreen;
+        }
+        /* 访问过后 */
+        a:visited{
+            color: orangered;
+        }
+        /* 鼠标悬停时 */
+        a:hover{
+            color: gold;
+        }
+        /* 鼠标点击那一刻 */
+        a:active{
+            color: royalblue;
+        }   
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(242, 245, 65);
+        }
+        .box:hover{
+            color: red;
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com/">百度一下</a>
+    <div class="box">卧槽</div>
+</body>
+</html>

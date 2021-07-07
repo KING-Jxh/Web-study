@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 
+块级标签居中:
+给自身加margin: 0 auto;行内标签居中:
+给父标签加text-align: center; line-height:高度;行内块标签居中:
+1.给父标签加text-align: center;2.转换为块级标签，用margin: 0 auto; */
+
+        
+        .box1{
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(245, 122, 100);
+            margin: 0 auto;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(193, 127, 255);
+            text-align: center;
+            line-height: 200px;
+        }
+        .box4{
+            
+            background-color: rgb(255, 97, 97);
+        }
+
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(245, 122, 100);
+            
+        }
+        img{
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box3">
+        <span class="box4">哈啊哈哈哈哈哈哈啊</span>
+    </div>
+    <div class="box5"><img src="颗粒.jpg" alt="颗粒"></div>
+</body>
+</html>
