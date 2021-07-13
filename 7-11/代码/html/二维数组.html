@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .one{
+            background-color: blanchedalmond;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <p>
+        一维数组，我们看成一组盒子，每个盒子只能放一个内容。
+        <br />
+        一维数组的表示: myarray[ ]
+        二维数组，我们看成一组盒子，不过每个盒子里还可以放多个盒子。
+        <br />
+        二维数组的表示: myarray[ ][ ] 注意:
+        二维数组的两个维度的索引值也是从0开始，两个维度的最后一个索引值为长度-1。
+        <br />
+        1. 二维数组的定义方法一
+        <br />
+        <br />
+        var myarr=new Array(); //先声明一维
+        <br />
+        for(var i=0;i<2;i++){ //一维长度为2
+        <br />
+        myarr[i]=new Array(); //再声明二维
+        <br />
+        for(var j=0;j<3;j++){ //二维长度为3
+        <br />
+        myarr[i][j]=i+j; // 赋值，每个数组元素的值为i+j
+        <br />
+        }
+        <br />
+        }
+        <br />
+        将上面二维数组，用表格的方式表示:
+      </p>
+      <img src="../img/0210.jpg" alt="" />
+      <p>
+        2. 二维数组的定义方法二
+        <br />
+        var Myarr = [[0 , 1 , 2 ],[1 , 2 , 3]]
+        <br />
+        3. 赋值
+        <br />
+        myarr[0][1]=5; //将5的值传入到数组中，覆盖原有值。
+        <br />
+        说明: myarr[0][1] ,0 表示表的行，1表示表的列。
+      </p>
+    </div>
+    <hr />
+
+    <script src="../js/erweishuzu.js"></script>
+  </body>
+</html>
