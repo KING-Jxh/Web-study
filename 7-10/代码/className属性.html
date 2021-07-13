@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            border: 1 solid red;
+            width: 300px;
+            height: 110px;
+            background-color: silver;
+            color: springgreen;
+
+        }
+        .two{
+            border:1 dashed black;
+            width: 600px;
+            height: 80px;
+            background-color: rgb(14, 48, 243);
+            color: rgb(248, 21, 78);
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 控制类名（className 属性）
+className 属性设置或返回元素的class 属性。语法：object.className = classname
+作用:
+1.获取元素的class 属性
+2. 为网页内的某个元素指定一个css样式来更改该元素的外观 -->
+
+<p id="txt1">第一段文字的属性和边框在访问网站的时候，有时会弹出一个小窗口，上面写着一段提示信息文字。如果你不点击“确定”，就不能对网页进行任何操作，这个小窗</p>
+<input type="button" value="添加样式" onclick="yangshi1()">
+<p id="txt2">第二段文字的字体和大小</p>
+<input type="button" value="更改样式" onclick="yangshi2()">
+<script src="../js/classname.js"></script>
+
+
+</body>
+</html>
