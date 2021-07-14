@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/onload.js"></script>
+
+    <!-- 卸载事件 -->
+    <script type="text/javascript">   
+        window.onunload = onunload_message;   
+        function onunload_message(){   
+           alert("您确定离开该网页吗？");   
+       }   
+    </script>
+</head>
+<body onload="jiazai()">
+    <!-- 加载事件（onload）
+事件会在页面加载完成后，立即发生，同时执行被调用的程序。
+注意：1. 加载页面时，触发onload事件，事件写在<body>标签内。
+
+      2. 此节的加载页面，可理解为打开一个新页面时。
+如下代码,当加载一个新页面时，弹出对话框“加载中，请稍等…”。 -->
+
+<P>加载成功</P>
+
+
+
+</body>
+</html>
