@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <!-- 返回/设置年份方法:get/setFullYear() 返回/设置年份，用四位数表示。
+
+var mydate=new Date();//当前时间2014年3月6日
+document.write(mydate+"<br>");//输出当前时间
+document.write(mydate.getFullYear()+"<br>");//输出当前年份
+mydate.setFullYear(81); //设置年份
+document.write(mydate+"<br>"); //输出年份被设定为 0081年。
+注意:不同浏览器， mydate.setFullYear(81)结果不同，年份被设定为 0081或81两种情况。
+
+结果:
+Thu Mar 06 2014 10:57:47 GMT+0800
+2014
+Thu Mar 06 0081 10:57:47 GMT+0800
+
+注意:
+1.结果格式依次为：星期、月、日、年、时、分、秒、时区。(火狐浏览器)
+2. 不同浏览器，时间格式有差异 -->
+
+
+
+<script type="text/javascript">
+    var mydate=new Date(); 
+  var myyear=mydate.getFullYear();
+   document.write("年份:"+myyear+"<br/ >");
+  document.write(" 日期:"+mydate);
+      </script>
+
+
+</body>
+</html>
