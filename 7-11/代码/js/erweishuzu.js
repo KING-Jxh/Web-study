@@ -7,3 +7,4 @@ for (var i = 0; i < 2; i++) { //一维长度为2
 }
 myarr[0][1]=12;
 document.write(myarr[0][1]);
+
