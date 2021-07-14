@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10 auto;
+
+        }
+        #yikai{
+            width: 300px;
+            height: 200px;
+            background-color: bisque;
+            border: 1px solid red;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 鼠标单击事件( onclick ）
+onclick是鼠标单击事件，当在网页上单击鼠标时，就会发生该事件。同时onclick事件调用的程序块就会被执行，通常与按钮一起使用。比如，我们单击按钮时，触发 onclick 事件，并调用两个数和的函数add2()。代码如下： -->
+<script src="../js/onclick.js"></script>
+<input type="button" name="" id="" value="鼠标单击事件" onclick="openwin()">
+<hr>
+
+<!-- 鼠标经过事件（onmouseover）
+鼠标经过事件，当鼠标移到一个对象上时，该对象就触发onmouseover事件，并执行onmouseover事件调用的程序。 -->
+<script src="../js/onmouseover.js"></script>
+<input type="button" name="password" id="" onmouseover="jingguo()" value="鼠标经过事件,请输入你的密码">
+<hr>
+
+<!-- 鼠标移开事件（onmouseout）
+鼠标移开事件，当鼠标移开当前对象时，执行onmouseout调用的程序。 -->
+<script src="../js/onmouseout.js"></script>
+<input type="text" name="text" id="yikai" value="鼠标移开事件" onmouseout="yikai()">
+<hr>
+<!-- 光标聚焦事件（onfocus）
+当网页中的对象获得聚点时，执行onfocus调用的程序就会被执行。
+如下代码, 当将光标移到文本框内时，即焦点在文本框内， -->
+<script src="../js/onfocus.js"></script>
+<form action="">
+    <select onmouseout="jujiao()">
+        <option value="">学生</option>
+        <option value="">教师</option>
+        <option value="">工人/option>
+
+        <option value="">医生</option>
+
+        <option value="">律师</option>
+
+    </select>
+
+</form>
+<input type="button" name="text" id="" value="光标聚焦事件" onmouseout="jujiao()">
+<hr>
+<!-- 失焦事件（onblur）
+onblur事件与onfocus是相对事件，当光标离开当前获得聚焦对象的时候，触发onblur事件，同时执行被调用的程序。
+
+如下代码, 网页中有用户和密码两个文本框。当前光标在用户文本框内时（即焦点在文本框），在光标离开该文本框后（即失焦时），触发onblur事件，并调用函数message()。 -->
+<script type="text/javascript">
+    function message(){
+      alert("请确定已输入密码后，在移开!"); }
+  </script>    
+  </head>
+  <body>
+    <form>
+     用户:<input name="username" type="text" value="请输入用户名！" >
+     密码:<input name="password" type="text" value="请输入密码！" onblur="message()">
+    </form>
+
+</body>
+
+</html>
