@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>舒宁</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>QQ空间</title>
+    <link rel="shortcut icon" href="../img/a1wdu-abt20-001.ico" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .nav{
+            width: 100%;
+            height: 40px;
+            background-color: blanchedalmond;
+
+        }
+        .nav_content{
+            width: 1200px;
+            height: 40px;
+            background-color: rgb(93, 62, 21);
+            margin: 0 auto;
+            overflow: hidden;
+            /* 溢出隐藏 */
+        }
+        .header{
+            width: 100%;
+            height:110px;
+            background-color: rgb(205, 206, 255);
+
+        }
+        .header_content{
+            width: 1200px;
+            height: 110px;
+            background-color: rgb(28, 21, 93);
+            margin: 0 auto;
+        }
+        .nav_content_left{
+            width: 100px;
+            height: 41px;
+            background-color: cyan;
+            float: left;
+           
+        }
+        .clearf::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .header_content_left{
+            width: 200px;
+            height: 110px;
+            background-color: rgb(255, 0, 0);
+            float: left;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <p>输入link:favicon,点击回车</p><br>
+    <p>下载png格式标签图片，通过png转ico网站，将图片转换成ico格式</p><br>
+    <p>将图片另存到本地，替换href中的图片</p>
+    <p>https://www.aconvert.com/cn/icon/png-to-ico/   转换网站</p>
+
+    <hr>
+    <!-- 浮动的问题:上层标签溢出会影响下层标签得浮动           解决溢出问题  overflow: hidden; -->
+    <div class="nav">
+        <div class="nav_content">
+                <div class="nav_content_left"></div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header_content">
+<div class="header_content_left"></div>
+        </div>
+    </div>
 </body>
 </html>
