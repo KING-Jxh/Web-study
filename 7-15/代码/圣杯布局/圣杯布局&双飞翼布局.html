@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 面试常问：左右固定，中间自适应 -->
+    <!-- 步骤：1、中间部分先解析     2、左右固定 3、中间自适应（100%） 4、分别加浮动 5、轻浮动-->
+<style>
+    *{padding: 0px;
+    margin: 0px;}
+    .center{
+        width: 100%;
+        height: 400px;
+        background-color: lightblue;
+        /* 加浮动 */
+        float: left;
+        white-space:normal ;
+    }
+    .left{
+        width: 200px;
+        height: 400px;
+        background-color: rgb(170, 253, 75);
+        /* 加浮动 */
+        float: left;
+        /* 移动和中间部分在一行，移动-100% */
+        margin-left: -100%;
+        position: relative;
+        left: -200px;
+
+    }
+    .right{
+        width:300px;
+        height: 400px;
+        background-color: rgb(200, 75, 231);
+        /* 加浮动 */
+        float: left;
+        /*移动负的本身的宽度  */
+        margin-left: -300px;
+        position: relative;
+        left: 300px;
+    }
+    /* 添加清浮动 */
+    .clearfix::after{
+        content: '';
+        /* 和content:none;相同 */
+        display: block;
+        clear: both;
+    }
+    .wrap{
+        padding: 0px 200px 0px 200px;
+    }
+
+
+    /* 双飞翼布局 */
+    .center1{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(0, 140, 255);
+        float: left;
+    }
+    .left1{
+        width: 300px;
+        height: 400px;
+        background-color: rgb(51, 255, 0);
+        float: left;
+        margin-left: -100%;
+    }
+    .right1{
+        width: 200px;
+        height: 400px;
+        background-color: salmon;
+        float: left;
+        margin-left: -200px;
+    }
+    .clearfix::after{
+        content: none;
+        display: block;
+        clear: both;
+    }
+    .inner{
+        margin: 0px 200px 0px 200px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="center">
+            absolute	
+            生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+            
+            元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+            
+            fixed	
+            生成固定定位的元素，相对于浏览器窗口进行定位。
+            
+            元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+            
+            relative	
+            生成相对定位的元素，相对于其正常位置进行定位。
+            
+            因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+            
+            static	默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+            sticky	
+            粘性定位，该定位基于用户滚动的位置。
+            
+            它的行为就像 position:relative; 而当页面滚动超出目标区域时，它的表现就像 position:fixed;，它会固定在目标位置。
+            
+            注意: Internet Explorer, Edge 15 及更早 IE 版本不支持 sticky 定位。 Safari 需要使用 -webkit- prefix (查看以下实例)。
+            
+            inherit	规定应该从父元素继承 position 属性的值。
+            initial	设置该属性为默认值，详情查看 CSS initial 关键字。</div>
+        <div class="left">lerft</div>
+        
+        <div class="right">right</div>
+
+    </div>
+    
+    <!-- 双飞翼布局是在圣杯布局基础上修改的，优化了圣杯布局：当缩小至中间部分小于左侧部分时，会布局混乱，不能无线缩小下去 -->
+    
+    <div class="warp1">
+        <div class="center1">
+            <div class="inner">
+                给里面盒子加外边距
+            </div>
+             <!-- 双飞翼布局多加了一层标签，结构更加冗余 -->
+           
+        </div>
+        <div class="left1">static	默认值。没有定位，元素出现在</div>
+
+        <div class="right1">static	默认值。没有定位，元素出现在</div>
+    </div>
+</body>
+</html>
