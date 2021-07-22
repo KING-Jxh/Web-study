@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrap{
+            width: 900px;
+            border: 10px solid red;
+            overflow: hidden;
+        }
+        .left{
+            width: 300px;
+            background-color: sandybrown;
+            
+            float: left;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        } 
+        .center{
+            width: 300px;
+            background-color: rgb(244, 96, 170);
+           
+            float: left;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+
+
+        }
+        .right{
+            width: 300px;
+            background-color: rgb(52, 235, 225);
+           
+            float: left;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+
+
+        }
+        .clearfix::after{
+            content: '';
+            display:block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 内外边距相交发：子标签内边距设置无限大，外边距设置负的无限大      父标签设置溢出隐藏overflow:hidden;   -->
+    <div class="wrap clearfix">
+        <div class="left">
+            朱智发表了极具蛊惑人心的讲话，宣称要不惜一切为姚晋复仇，彻底点燃了御朵卫的怒火和士气，叫嚣着冲进长安，活剐姚吉的呼声震于九天之上。
+    
+            但统领御朵卫的军主刘恢却不这么想，他深切怀疑这是针对姚晋的阴谋，因为那支箭绝对不是普通兵卒射出来的，时机、角度、力道，非小宗师不可为
+        </div>
+        <div class="center">
+            朱智发表了极具蛊惑人心的讲话，宣称要不惜一切为姚晋复仇，彻底点燃了御朵卫的怒火和士气，叫嚣着冲进长安，活剐姚吉的呼声震于九天之上
+        </div>
+        <div class="right">
+            朱智发表了极具蛊惑人心的讲话，宣称要不惜一切为姚晋复仇，彻底点燃了御朵卫的怒火和士气，叫嚣着冲进长安，活剐姚吉的呼声震于九天之
+            可仅仅凭这个怀疑朱智，未免显得太草率，刘恢并不敢确定。按说现在还不到过河拆桥的时候，姚吉仍旧盘踞长安，麾下精兵数万，没了
+        </div>
+    </div>
+</body>
+</html>
