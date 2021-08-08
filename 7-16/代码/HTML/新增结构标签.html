@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- H5新增的语义标签 
+    
+        优点：更加语义化，维护起来更加简单，
+        不需要其一堆名字，结构比较清晰
+
+        兼容：不能兼容IE8
+    -->
+
+
+    <!-- IE兼容解决方法 ：script标签内部写JS-->
+    <script>
+        //创建标签  默认是行内标签
+document.createElement('header');
+    </script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/html5shiv/r29/html5.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        /* 解决兼容  行内标签变块级标签 */
+        header{
+        display: block;
+        }
+        header{
+            width: 100%;
+            height: 40px;
+            background-color: blue;
+        }
+        nav{
+            width: 100%;
+            height: 40px;
+            background-color: blue;
+        }
+        main{
+            width: 100%;
+            height: 400px;
+            background-color: blue;
+        }
+        aside{
+            width: 30%;
+            height: 400px;
+            background-color: burlywood;
+            float: left;
+        }
+        article{
+            width: 70%;
+            height: 400px;
+            background-color: darkseagreen;
+            float: left;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear:none;
+        }
+        footer{
+            width: 100%;
+            height: 40px;
+            background-color: darkviolet;
+        }
+        img{width: 200px;}
+        section{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 头部标签 块级标签 -->
+        头部标签     
+    </header>
+    <nav>
+        <!-- 导航标签 -->
+        导航内容
+    </nav>
+    <main>
+        
+        <!-- 主题内容 -->
+        <aside>
+            <!-- 侧边栏 -->
+            侧边栏
+        </aside>
+        <article>
+            <!-- 完整的内容区域 -->
+            这里写完整的内容
+            
+            <section>
+                <!-- 小模块 -->
+                <a href="http://wwww.baidu.com">百度</a>
+                <img src="../img/1 (2).png" alt="呆唯">
+                <p>轻音少女</p>
+                <h1>标题</h1>
+            </section>
+            <section>
+                <!-- 小模块 -->
+                <a href="http://wwww.baidu.com">百度</a>
+                <img src="../img/1 (2).png" alt="呆唯">
+                <p>轻音少女</p>
+                <h1>标题</h1>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <!-- 页脚部分 -->
+    </footer>
+</body>
+</html>
